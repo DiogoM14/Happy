@@ -1,9 +1,13 @@
 import React from 'react'
+import Landing from './pages/Landing'
+import Global from './styles/Global'
 
 export default function App() {
   return (
     <div className="App">
-      <h1>Hello World</h1>
+      <Landing />
+
+      <Global />
     </div>
   )
 }
