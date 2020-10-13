@@ -7,8 +7,13 @@ export const Container = styled.div`
   position: relative;
   display: flex;
 
+  .leaflet-container {
+    z-index: 5;
+  }
+
   a {
     position: absolute;
+    z-index: 10;
 
     right: 40px;
     bottom: 40px;
