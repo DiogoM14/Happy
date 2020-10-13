@@ -15,7 +15,7 @@ export const ContentWrapper = styled.div`
   position: relative;
 
   width: 100%;
-  max-width: 1100px;
+  max-width: 1400px;
 
   height: 100%;
   max-height: 680px;
@@ -25,7 +25,7 @@ export const ContentWrapper = styled.div`
   flex-direction: column;
   justify-content: space-between;
 
-  background: url(${backgroundImg}) no-repeat 80% center;
+  background: url(${backgroundImg}) no-repeat 75% center;
 
   main h1 {
     max-width: 350px;

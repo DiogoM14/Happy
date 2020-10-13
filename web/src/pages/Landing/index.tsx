@@ -1,5 +1,6 @@
 import React from 'react'
 import { FiArrowRight } from 'react-icons/fi'
+import { Link } from 'react-router-dom'
 
 import { Container, ContentWrapper } from './styles'
 
@@ -20,9 +21,9 @@ const Landing: React.FC = () => {
             <span>Paços de Ferreira</span>
           </div>
 
-          <a href="">
+          <Link to="/app">
             <FiArrowRight size={26} color="rgba(0, 0, 0, 0.6)" />
-          </a>
+          </Link>
         </main>
       </ContentWrapper>
     </Container>
