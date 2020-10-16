@@ -1,11 +1,9 @@
 import React from 'react'
 import { FaWhatsapp } from 'react-icons/fa'
-import { FiClock, FiInfo, FiArrowLeft } from 'react-icons/fi'
+import { FiClock, FiInfo } from 'react-icons/fi'
 import { Map, Marker, TileLayer } from 'react-leaflet'
-import { useHistory } from 'react-router-dom'
-import L from 'leaflet'
 
-import mapMarkerImg from '../../assets/images/map-marker.svg'
+import SideBar from '../../components/SideBar'
 
 import {
   Container,
@@ -17,28 +15,12 @@ import {
   OpenDetails
 } from './styles'
 
-const happyMapIcon = L.icon({
-  iconUrl: mapMarkerImg,
-
-  iconSize: [58, 68],
-  iconAnchor: [29, 68],
-  popupAnchor: [0, -60]
-})
+import mapIcon from '../../utils/masIcon'
 
 export default function Orphanage() {
-  const { goBack } = useHistory()
-
   return (
     <Container>
-      <aside>
-        <img src={mapMarkerImg} alt="Happy" />
-
-        <footer>
-          <button type="button" onClick={goBack}>
-            <FiArrowLeft size={24} color="#FFF" />
-          </button>
-        </footer>
-      </aside>
+      <SideBar />
 
       <Main>
         <OrphanageDetails>
@@ -109,7 +91,7 @@ export default function Orphanage() {
                 />
                 <Marker
                   interactive={false}
-                  icon={happyMapIcon}
+                  icon={mapIcon}
                   position={[-27.2092052, -49.6401092]}
                 />
               </Map>

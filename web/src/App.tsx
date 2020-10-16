@@ -1,7 +1,9 @@
 import React from 'react'
 
-import Routes from './routes'
+import 'leaflet/dist/leaflet.css'
 import Global from './styles/Global'
+
+import Routes from './routes'
 
 export default function App() {
   return (
