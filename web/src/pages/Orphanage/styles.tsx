@@ -50,15 +50,14 @@ export const Main = styled.main`
 `
 
 export const OrphanageDetails = styled.div`
-    width: 700px;
-    margin: 64px auto;
+  width: 700px;
+  margin: 64px auto;
 
-    background: #ffffff;
-    border: 1px solid #d3e2e5;
-    border-radius: 20px;
+  background: #ffffff;
+  border: 1px solid #d3e2e5;
+  border-radius: 20px;
 
-    overflow: hidden;
-  }
+  overflow: hidden;
 
   img {
     width: 100%;
