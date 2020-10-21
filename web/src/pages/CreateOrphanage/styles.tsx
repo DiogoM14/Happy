@@ -20,6 +20,12 @@ export const Form = styled.form`
 
   overflow: hidden;
 
+  .leaflet-container {
+    margin-bottom: 40px;
+    border-radius: 1px solid #d3e2e5;
+    border-radius: 20px;
+  }
+
   button {
     margin-top: 64px;
 
